@@ -27,7 +27,7 @@ Vagrant.configure(2) do |config|
   config.vm.define "web" do |web|                  
     web.vm.box = "ubuntu/trusty64"
     web.vm.box_check_update = false
-    web.vm.network "private_network", ip: "172.16.0.2"
+    web.vm.network "private_network", ip: "172.16.0.3"
     web.vm.hostname = "web"
     web.vm.provider "virualbox" do |vb|
       vb.memory = "512"
